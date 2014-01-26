@@ -62,6 +62,13 @@ namespace itg
             return pass;
         }
         
+        template<class T>
+        shared_ptr<T> getPass(int index)
+        {
+            shared_ptr<T> pass = static_pointer_cast<T>(passes[index]);
+            return pass;
+        }
+        
         ofTexture& getProcessedTextureReference();
         
         // advanced
